@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Experiència - Pere López</title>
   <link rel="stylesheet" href="../css/css.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
+    <img src="../img/logo.jpg" alt="Logo" class="logo">
     <nav>
       <ul>
         <li><a href="../index.html">Qui sóc</a></li>
@@ -19,33 +20,53 @@
         <li><a href="en/experience.html"><i class="fas fa-language"></i> English</a></li>
       </ul>
     </nav>
-    <img src="/img/logo.jpg" alt="Logo" class="logo">
   </header>
 
   <main>
-    <section>
-      <h1>Experiència Laboral</h1>
-      <ul>
-        <li>
-          <strong>2024/2025 - Telemarketing Golden Line</strong><br />
-          Pràctiques com a administrador de sistemes informàtics.
-        </li>
-        <li>
-          <strong>2023/2024 - Professor particular</strong><br />
-          Classes de repàs a alumnes de l’ESO i Primària. Ajuda en els estudis.
-        </li>
-        <li>
-          <strong>2023/2024 - Federació Catalana de Pentatló</strong><br />
-          Organització d'actes varis. Tasques de muntatge/desmuntatge, distribució de treball.
-        </li>
-      </ul>
+    <!-- Experiencia Laboral en Informàtica -->
+    <section class="experiencia-informatica">
+      <h1>Experiència Laboral en Informàtica</h1>
+      <div class="exp-cards">
+        <div class="exp-card reglada">
+          <div class="exp-text">
+            <h3>2024/2025 - <span class="highlight">Telemarketing Golden Line</span></h3>
+            <p>He realitzat les meves practiques a Goldenline com a tècnic de sistemes en pràctiques. El meu treball consisteix en tasques com la instal·lació i configuració de cables de xarxa, la creació d'imatges per a equips nous, la reparació de PC i la supervisió de diferents components del sistema. Aquestes experiències m'estan ajudant a aplicar els meus coneixements de SMX2 en un entorn real, aprendre a resoldre problemes tècnics i millorar a cada tasca.
+            </p>
+          </div>
+          <div class="exp-image">
+            <img src="../img/goldenline.jpeg" alt="Logo Golden Line" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Altres activitats</h2>
-      <ul>
-        <li>2020/2024 - Federat en Bàsquet</li>
-      </ul>
+    <!-- Experiencia Laboral General -->
+    <section class="experiencia">
+      <h1>Experiència Laboral General</h1>
+      <div class="exp-cards">
+        <div class="exp-card no-reglada">
+          <div class="exp-text">
+            <h3>2023/2024 - <span class="highlight">Professor particular</span></h3>
+            <p>Classes de repàs a alumnes de l’ESO i Primària. Ajuda en els estudis.</p>
+          </div>
+          <div class="exp-image">
+            <img src="../img/profe.jpg" alt="Logo Professor Particular" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- Federació Catalana de Pentatló debajo de Profesor Particular -->
+      <div class="exp-cards">
+        <div class="exp-card no-reglada">
+          <div class="exp-text">
+            <h3>2023/2024 - <span class="highlight">Federació Catalana de Pentatló</span></h3>
+            <p>Organització d'actes varis. Tasques de muntatge/desmuntatge, distribució de treball.</p>
+          </div>
+          <div class="exp-image">
+            <img src="../img/federacion.jpeg" alt="Logo Federació Catalana de Pentatló" />
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

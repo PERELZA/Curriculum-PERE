@@ -1,65 +1,101 @@
 /* css/estils.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    font-family: 'Merriweather', serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #222;
     color: #fff;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav ul {
+    padding: 0.5rem 2rem;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin: 0 1rem;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  /* Estilo para el logo */
-  .logo {
+}
+
+/* Estilo para el logo */
+.logo {
     width: 50px; /* Ajusta el tamaño del logo */
     height: auto;
-  }
-  
-  main {
+}
+
+main {
     padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .intro iframe {
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.exp-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.exp-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 560px;
-    height: 315px;
-    display: block;
-    margin: 2rem auto;
-  }
-  
-  footer {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.exp-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.exp-image {
+    width: 150px;
+    height: auto;
+}
+
+.exp-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Color destacado para los títulos */
+.highlight {
+    color: #1da1f2;
+}
+
+footer {
     background-color: #222;
     color: #fff;
     display: flex;
@@ -67,42 +103,130 @@ body {
     align-items: flex-start;
     padding: 1rem 2rem;
     flex-wrap: wrap;
-  }
-  
-  footer p {
+    font-size: 0.9rem;
+}
+
+footer p {
     margin: 0;
-  }
-  
-  footer ul {
+}
+
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  footer ul li {
+}
+
+footer ul li {
     margin: 0.2rem 0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: #1da1f2;
     text-decoration: none;
+}
+
+/* Solo mueve la imagen de index.html a la derecha */
+.perfil-dreta {
+    float: left;
+    margin-left: 20px;
+    max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+    border-radius: 10px; /* Opcional: para esquinas redondeadas */
+}
+
+.intro-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.profile-photo.perfil-dreta {
+  max-width: 200px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más bonito */
+}
+
+.intro-text {
+  flex: 1; /* El texto ocupa el espacio restante */
+}
+
+iframe {
+  display: block;
+  margin: 20px auto; /* Centra el video horizontalmente */
+  max-width: 100%; /* Asegura que el video sea responsivo */
+  border: none; /* Opcional: elimina el borde del iframe */
+}
+
+.competencies-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px dashed #ccc;
   }
   
-  @media (max-width: 500px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
+  .competencies-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #eee;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+  }
   
-    .intro iframe {
-      height: 200px;
-    }
+  .competencia {
+    margin-bottom: 1rem;
+  }
   
-    footer {
-      flex-direction: column;
-      align-items: flex-start;
+  .competencia .label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .competencia i {
+    color: #000;
+    font-size: 1.2rem;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #00cfff;
+    height: 10px;
+    border-radius: 10px;
+  }
+  
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .exp-card {
+        flex-direction: column;
+        align-items: flex-start;
     }
-  } 
+
+    .exp-image {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-content {
+        flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .profile-photo.perfil-dreta {
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto en diseño vertical */
+    }
+}
