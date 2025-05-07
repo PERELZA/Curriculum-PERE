@@ -1,18 +1,20 @@
 /* css/estils.css */
-/* css/estils.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-family: 'Merriweather', serif;
   }
   
   header {
     background-color: #222;
     color: #fff;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   nav ul {
@@ -32,6 +34,12 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+  }
+  
+  /* Estilo para el logo */
+  .logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
   }
   
   main {
