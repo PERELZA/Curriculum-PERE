@@ -1,4 +1,5 @@
 /* css/estils.css */
+/* css/estils.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -53,9 +54,28 @@ body {
   footer {
     background-color: #222;
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   footer a {
@@ -72,5 +92,9 @@ body {
     .intro iframe {
       height: 200px;
     }
-  }
   
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  } 
