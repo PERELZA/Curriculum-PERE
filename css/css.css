@@ -299,4 +299,20 @@ iframe {
     .profile-photo.perfil-dreta {
         margin-bottom: 20px; /* Espacio entre la imagen y el texto en diseño vertical */
     }
+    header {
+      justify-content: space-between; /* Mantiene los elementos alineados */
+      padding: 0.5rem 1rem;
+    }
+  
+    .logo {
+      width: 40px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+  
+    nav ul {
+      gap: 0.5rem; /* Reduce el espacio entre los elementos del menú */
+    }
+  
+    nav ul li a {
+      font-size: 0.9rem; /* Reduce el tamaño del texto del menú */
+    }
 }
