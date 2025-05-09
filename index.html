@@ -1,23 +1,35 @@
-<!-- index.html - Català -->
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+  <!-- Metadata: character set and viewport for mobile responsiveness -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title of the page -->
   <title>Pere López - Currículum</title>
+
+  <!-- Favicon for the website -->
   <link rel="icon" type="image/png" href="img/logo.jpg" />
+
+  <!-- Link to external stylesheet for custom styling -->
   <link rel="stylesheet" href="css/css.css" />
+
+  <!-- Link to Font Awesome for icon support -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Google Font link for Merriweather -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header section with logo and navigation links -->
   <header>
     <a href="index.html">
       <img src="img/logo.jpg" alt="Logo" class="logo">
     </a>
     <nav>
       <ul>
+        <!-- Navigation items to other pages of the website -->
         <li><a href="index.html" title="Qui sóc"><i class="fas fa-user"></i></a></li>
         <li><a href="views/estudis.html" title="Estudis"><i class="fas fa-graduation-cap"></i></a></li>
         <li><a href="views/experiencia.html" title="Experiència"><i class="fas fa-briefcase"></i></a></li>
@@ -26,45 +38,74 @@
     </nav>
   </header>
 
+  <!-- Main content area -->
   <main>
+    <!-- Introductory section about the individual -->
     <section class="intro">
       <h1 class="section-title">Qui sóc</h1>
       <div class="intro-content">
+        <!-- Profile photo on the left side -->
         <img src="img/estudiate.jpg" alt="Pere López" class="profile-photo perfil-dreta">
+
         <div class="intro-text">
           <h2>Pere López</h2>
-          <p>Sóc estudiant de segon any de Sistemes Microinformàtics i Xarxes (SMX) i tinc 17 anys. M'apassiona la tecnologia i tot allò relacionat amb ordinadors i xarxes. Al llarg del curs, he après molt sobre instal·lació i configuració de sistemes operatius, administració de xarxes i suport tècnic.</p>
-          <p>Em considero una persona curiosa, amb iniciativa i ganes d'aprendre. Busco una oportunitat per posar en pràctica els meus coneixements, seguir formant-me i començar una carrera al món de la informàtica.</p>
-          
+          <p>
+            Sóc estudiant de segon curs de Sistemes Microinformàtics i Xarxes (SMX) i tinc 17 anys. La meva passió per la tecnologia m'ha portat a especialitzar-me en àrees com el manteniment d'ordinadors, la configuració de xarxes i el suport tècnic. Durant els meus estudis, he adquirit una sòlida formació en instal·lació de sistemes operatius, configuració de xarxes i resolució de problemes tant de programari com de maquinari.
+          </p>
+
+          <p>
+            Em considero una persona curiosa, motivada i amb ganes d'aprendre de manera constant, tant de forma independent com en equip. Actualment, busco oportunitats per aplicar els meus coneixements en un entorn professional i continuar el meu creixement dins del sector tecnològic.
+          </p>
+
+          <!-- Competencies section with progress bars -->
           <div class="competencies-section">
             <h2 class="section-title">Competències</h2>
+
+            <!-- Competency: Teamwork -->
             <div class="competencia">
               <span class="label"><i class="fas fa-users"></i> Treball en equip</span>
-              <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+              </div>
             </div>
+
+            <!-- Competency: Creativity -->
             <div class="competencia">
               <span class="label"><i class="fas fa-lightbulb"></i> Creativitat</span>
-              <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+              </div>
             </div>
+
+            <!-- Competency: Communication -->
             <div class="competencia">
               <span class="label"><i class="fas fa-bullhorn"></i> Comunicació</span>
-              <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
             </div>
+
+            <!-- Competency: Conflict resolution -->
             <div class="competencia">
               <span class="label"><i class="fas fa-handshake"></i> Resolució de conflictes</span>
-              <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Video CV section -->
       <div class="video-section">
         <h2 class="section-title">Videocurrículum</h2>
+        <!-- Embedded YouTube video for the CV -->
         <iframe width="853" height="480" src="https://www.youtube.com/embed/01PpX9wg3m8" title="Pere L VIDEOCURRICULUM" allowfullscreen></iframe>
       </div>
     </section>
   </main>
 
+  <!-- Footer with contact information -->
   <footer>
     <p>&copy; 2025 Pere López</p>
     <ul>
@@ -75,4 +116,3 @@
   </footer>
 </body>
 </html>
-
